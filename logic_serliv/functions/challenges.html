@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenges</title>
+</head>
+<body>
+
+    <script>
+    // Challenge sum()
+        function sum(n, n1) {
+            return n + n1;
+        }
+        console.log(sum(2, 4));
+
+    // Challenge calculate()
+        function calculate(n, op, n1) {
+            switch (op) {
+            case '+':
+                return n + n1;
+            case '-':
+                return n - n1;
+            case '*':
+                return n * n1;
+            case '/':
+                return n / n1;
+            default:
+                return null;
+            }
+        }
+        console.log(calculate(4, '+', 4));
+
+    // Challenge isEven()
+        function isEven (n) {
+            return n % 2 == 0;
+        }
+        console.log(isEven(4));
+
+    // Challenge isLeapYear()
+        function isLeapYear (year) {
+            return year % 4 == 0 && (year % 100 != 0 || year % 400  == 0);
+        }
+        console.log(isLeapYear(2000));
+
+    </script>
+</body>
+</html>
